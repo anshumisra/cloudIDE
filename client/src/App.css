@@ -15,10 +15,10 @@
 }
 
 .files {
-  width: 200px;
+  width: 240px;
   border-right: 1px solid #333;
   overflow-y: auto;
-  background-color: #1e1e1e;
+  background-color: #cfc7ff;
 }
 
 .editor {
@@ -27,11 +27,12 @@
 }
 
 .terminal-container {
-  height: 25vh;
+  height: 45vh;
+  min-height: 35vh;
   width: 100%;
   margin: 0;
   padding: 0;
   border-top: 1px solid #333;
   background-color: #1e1e1e;
-  overflow: hidden;
+  overflow: scroll;
 }

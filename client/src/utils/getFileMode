@@ -1,0 +1,23 @@
+export function getFileMode({ selectedFile }) {
+  if (!selectedFile) return "text";
+  
+  // File extension mapping
+  const extensionMap = {
+    ".js": "javascript",
+    ".jsx": "javascript",
+    ".ts": "typescript",
+    ".tsx": "typescript",
+    ".html": "html",
+    ".css": "css",
+    ".json": "json",
+    ".md": "markdown"
+  };
+  
+for (const [ext, mode] of Object.entries(extensionMap)) {
+    if (selectedFile.endsWith(ext)) {
+      return mode;
+    }
+  }
+  
+  return "text";
+}
